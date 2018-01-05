@@ -1,2 +1,3 @@
 # boomtime-slot-machine-demo
-A first try
+
+This uses https://github.com/josex2r/jQuery-SlotMachine, with small edits to variables, css and responsiveness.
