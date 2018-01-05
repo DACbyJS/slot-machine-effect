@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>boomtime jQuery Slot Machine</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <link rel="stylesheet" href="additional.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="jQuery-SlotMachine-master/dist/jquery.slotmachine.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="jQuery-SlotMachine-master/dist/jquery.slotmachine.js"></script>
+
+</head>
+
+<body>
+
+    <!-- boomtime slot example -->
+    <div id="boomtime-slot" class="slot-container">
+        <div class="slot-row slot-content">
+            <div class="slot-column">
+                <div class="slot-well">
+
+                    <p class="non-slot-text">How do you get from</p>
+                    <div id="slot-list-1">
+                        <div class="text-center">Applicant</div>
+                        <div class="text-center">Prospect</div>
+                        <div class="text-center">Fan</div>
+                        <div class="text-center">Curiosity</div>
+                    </div>
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#slot-list-1").slotMachine({
+                                active: 1,
+                                delay: 450,
+                                auto: 1500
+                            });
+                        });
+
+                    </script>
+
+                    <p class="non-slot-text"> to </p>
+                    <div id="slot-list-2">
+                        <div class="text-center">Recruit</div>
+                        <div class="text-center">Student</div>
+                        <div class="text-center">Supporter</div>
+                        <div class="text-center">Conversion</div>
+                    </div>
+                    <p class="non-slot-text"> ? </p>
+
+                    <script>
+                        $(document).ready(function() {
+                            $("#slot-list-2").slotMachine({
+                                active: 1,
+                                delay: 450,
+                                auto: 1500
+                            });
+                        });
+
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
